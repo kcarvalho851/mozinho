@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pergunta 1</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f0f0f0;
+      padding-top: 50px;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 1.2em;
+      margin: 20px;
+      cursor: pointer;
+      border: none;
+      border-radius: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .sim {
+      background-color: #28a745;
+      color: white;
+    }
+
+    .nao {
+      background-color: #dc3545;
+      color: white;
+    }
+
+    .gif-container img {
+      width: 100%;
+      max-width: 400px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Mozinho, você me ama?</h1>
+  <div class="gif-container">
+    <img src="imagens/duvida1.gif" alt="Gif de pergunta">
+  </div>
+  <button class="sim">SIM</button>
+  <button class="nao" onclick="mostrarSegundaPagina()">NÃO</button>
+
+  <script>
+    function mostrarSegundaPagina() {
+      window.location.href = 'pagina2.html'; // Redireciona para a segunda página
+    }
+  </script>
+</body>
+
+</html>

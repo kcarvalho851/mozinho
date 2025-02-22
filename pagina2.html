@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pergunta 2</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f0f0f0;
+      padding-top: 50px;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 1.2em;
+      margin: 20px;
+      cursor: pointer;
+      border: none;
+      border-radius: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .nao {
+      background-color: #dc3545;
+      color: white;
+    }
+
+    .gif-container img {
+      width: 100%;
+      max-width: 400px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Poxa, é sério que você não me ama? :( Vou perguntar de novo, você me ama???????</h1>
+  <div class="gif-container">
+    <img src="imagens/duvida2.gif" alt="Gif de dúvida">
+  </div>
+  <button class="nao" onclick="mostrarTerceiraPagina()">NÃO</button>
+  <button class="nao" onclick="mostrarTerceiraPagina()">NÃO</button>
+
+  <script>
+    function mostrarTerceiraPagina() {
+      window.location.href = 'pagina3.html'; // Redireciona para a terceira página
+    }
+  </script>
+</body>
+
+</html>
